@@ -14,6 +14,7 @@
 		D83D26C31E03920000B4A533 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D83D26C11E03920000B4A533 /* LaunchScreen.storyboard */; };
 		D83D26CE1E03920000B4A533 /* Tips_CalculatiorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83D26CD1E03920000B4A533 /* Tips_CalculatiorTests.swift */; };
 		D83D26D91E03920000B4A533 /* Tips_CalculatiorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83D26D81E03920000B4A533 /* Tips_CalculatiorUITests.swift */; };
+		D83D26E71E03A16100B4A533 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83D26E61E03A16100B4A533 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		D83D26D41E03920000B4A533 /* Tips CalculatiorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tips CalculatiorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D83D26D81E03920000B4A533 /* Tips_CalculatiorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tips_CalculatiorUITests.swift; sourceTree = "<group>"; };
 		D83D26DA1E03920000B4A533 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D83D26E61E03A16100B4A533 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				D83D26B81E03920000B4A533 /* AppDelegate.swift */,
 				D83D26BA1E03920000B4A533 /* ViewController.swift */,
 				D83D26BC1E03920000B4A533 /* Main.storyboard */,
+				D83D26E61E03A16100B4A533 /* SettingsViewController.swift */,
 				D83D26BF1E03920000B4A533 /* Assets.xcassets */,
 				D83D26C11E03920000B4A533 /* LaunchScreen.storyboard */,
 				D83D26C41E03920000B4A533 /* Info.plist */,
@@ -261,6 +264,7 @@
 			files = (
 				D83D26BB1E03920000B4A533 /* ViewController.swift in Sources */,
 				D83D26B91E03920000B4A533 /* AppDelegate.swift in Sources */,
+				D83D26E71E03A16100B4A533 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
