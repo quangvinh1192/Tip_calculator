@@ -69,11 +69,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="$0.00" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Je6-b3-X3a">
-                                <rect key="frame" x="211" y="79" width="124" height="30"/>
+                                <rect key="frame" x="236" y="79" width="99" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <connections>
+                                    <action selector="re_calculate_tip:" destination="BYZ-38-t0r" eventType="editingChanged" id="N5q-xH-dZa"/>
+                                </connections>
                             </textField>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="1vq-MN-aR2">
                                 <rect key="frame" x="43" y="306" width="273" height="29"/>
@@ -83,13 +86,31 @@
                                     <segment title="20%"/>
                                     <segment title="25%"/>
                                 </segments>
+                                <connections>
+                                    <action selector="re_calculate_tip:" destination="BYZ-38-t0r" eventType="valueChanged" id="gl7-E7-Ldh"/>
+                                </connections>
                             </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="aPN-Ln-hyu" appends="YES" id="e60-gu-jrW"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" title="Tip Calculator" id="Ezh-CI-oWn"/>
+                    <connections>
+                        <outlet property="Bill_label" destination="Je6-b3-X3a" id="IsQ-5G-3k8"/>
+                        <outlet property="Tip_control" destination="1vq-MN-aR2" id="ufP-Ba-S2P"/>
+                        <outlet property="Tip_label" destination="l9k-tP-KwV" id="O9b-FH-Yds"/>
+                        <outlet property="Total_label" destination="LHP-WX-r37" id="DE8-wR-F8q"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="aPN-Ln-hyu">
+                    <connections>
+                        <action selector="Tap_control:" destination="BYZ-38-t0r" id="Eks-zn-xUg"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1076" y="137.18140929535232"/>
         </scene>
